@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float speed = 50.0f;
+    private float speed = 150.0f;
     private float Zbound = 6f;
 
     private Rigidbody playerRb;
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
+        Debug.Log("MOVEPLAYER");
         float verticalInput = Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
 
